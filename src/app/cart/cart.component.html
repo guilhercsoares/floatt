@@ -11,10 +11,9 @@
       <tr>
         <td>{{cart.products[0].id}}</td>
         <td>
-            <div class="row">
             <img src="{{cart.products[0].img}}" class="rounded float-left" style="width: 200px; height: auto;">
             <h6 class="card-title">{{cart.products[0].name}}</h6>
-            <p class="card-text">{{ product.description }}</p>
+            <p class="card-text">{{ cart.products[0].description }}</p>
         </td>
         <td>1</td>
         <td>{{cart.products[0].price | currency:'BRL':true}}</td>
