@@ -1,3 +1,39 @@
-<p>
-  cart works!
-</p>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <th scope="col">#</th>
+      <th scope="col">Item</th>
+      <th scope="col">Qtd</th>
+      <th scope="col">Valor</th>
+      <th scope="col">Total</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{cart.products[0].id}}</td>
+        <td>
+            <div class="row">
+            <img src="{{cart.products[0].img}}" class="rounded float-left" style="width: 200px; height: auto;">
+            <h6 class="card-title">{{cart.products[0].name}}</h6>
+            <p class="card-text">{{ product.description }}</p>
+        </td>
+        <td>1</td>
+        <td>{{cart.products[0].price | currency:'BRL':true}}</td>
+        <td>{{cart.products[0].price | currency:'BRL':true}}</td>
+      </tr>
+      <tr>
+        <td>{{cart.products[0].id}}</td>
+        <td>{{cart.products[0].name}}</td>
+        <td>1</td>
+        <td>{{cart.products[0].price | currency:'BRL':true}}</td>
+        <td>{{cart.products[0].price | currency:'BRL':true}}</td>
+      </tr>
+      <tr>
+        <td>{{cart.products[0].id}}</td>
+        <td>{{cart.products[0].name}}</td>
+        <td>1</td>
+        <td>{{cart.products[0].price | currency:'BRL':true}}</td>
+        <td>{{cart.products[0].price | currency:'BRL':true}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

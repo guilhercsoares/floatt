@@ -14,7 +14,7 @@ export class ProductComponent implements OnInit {
     name: "Óculos 1",
     description: "Óculos de Bambu Charcoal com lentes na cor Cinza, polarizadas e com proteção UV400.",
     price: 300.00
-}
+  };
 
   constructor() { }
 
